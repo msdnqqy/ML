@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="flavanoids <= 2.154\nentropy = 1.579\nsamples = 124\nvalue = [41, 46, 37]\nclass = 雪莉", fillcolor="#39e5810f"] ;
+1 [label="od280/od315_of_diluted_wines <= 2.222\nentropy = 0.978\nsamples = 63\nvalue = [0, 26, 37]\nclass = 贝尔摩德", fillcolor="#8139e54c"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="od280/od315_of_diluted_wines <= 1.558\nentropy = 0.583\nsamples = 43\nvalue = [0, 6, 37]\nclass = 贝尔摩德", fillcolor="#8139e5d6"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 11\nvalue = [0, 0, 11]\nclass = 贝尔摩德", fillcolor="#8139e5ff"] ;
+2 -> 3 ;
+4 [label="entropy = 0.696\nsamples = 32\nvalue = [0, 6, 26]\nclass = 贝尔摩德", fillcolor="#8139e5c4"] ;
+2 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 20\nvalue = [0, 20, 0]\nclass = 雪莉", fillcolor="#39e581ff"] ;
+1 -> 5 ;
+6 [label="proline <= 558.218\nentropy = 0.913\nsamples = 61\nvalue = [41, 20, 0]\nclass = 琴酒", fillcolor="#e5813983"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="entropy = 0.0\nsamples = 15\nvalue = [0, 15, 0]\nclass = 雪莉", fillcolor="#39e581ff"] ;
+6 -> 7 ;
+8 [label="proline <= 1026.54\nentropy = 0.496\nsamples = 46\nvalue = [41, 5, 0]\nclass = 琴酒", fillcolor="#e58139e0"] ;
+6 -> 8 ;
+9 [label="entropy = 0.874\nsamples = 17\nvalue = [12, 5, 0]\nclass = 琴酒", fillcolor="#e5813995"] ;
+8 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 29\nvalue = [29, 0, 0]\nclass = 琴酒", fillcolor="#e58139ff"] ;
+8 -> 10 ;
+}

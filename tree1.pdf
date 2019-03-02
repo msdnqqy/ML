@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="flavanoids <= 1.714\nentropy = 1.554\nsamples = 124\nvalue = [44, 50, 30]\nclass = 雪莉", fillcolor="#39e58113"] ;
+1 [label="alcohol <= 12.675\nentropy = 0.932\nsamples = 46\nvalue = [0, 16, 30]\nclass = 贝尔摩德", fillcolor="#8139e577"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="od280/od315_of_diluted_wines <= 2.04\nentropy = 0.902\nsamples = 22\nvalue = [0, 15, 7]\nclass = 雪莉", fillcolor="#39e58188"] ;
+1 -> 2 ;
+3 [label="entropy = 0.881\nsamples = 10\nvalue = [0, 3, 7]\nclass = 贝尔摩德", fillcolor="#8139e592"] ;
+2 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 12\nvalue = [0, 12, 0]\nclass = 雪莉", fillcolor="#39e581ff"] ;
+2 -> 4 ;
+5 [label="alcalinity_of_ash <= 21.054\nentropy = 0.25\nsamples = 24\nvalue = [0, 1, 23]\nclass = 贝尔摩德", fillcolor="#8139e5f4"] ;
+1 -> 5 ;
+6 [label="entropy = 0.439\nsamples = 11\nvalue = [0, 1, 10]\nclass = 贝尔摩德", fillcolor="#8139e5e6"] ;
+5 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 13\nvalue = [0, 0, 13]\nclass = 贝尔摩德", fillcolor="#8139e5ff"] ;
+5 -> 7 ;
+8 [label="proline <= 558.218\nentropy = 0.988\nsamples = 78\nvalue = [44, 34, 0]\nclass = 琴酒", fillcolor="#e581393a"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="entropy = 0.0\nsamples = 22\nvalue = [0, 22, 0]\nclass = 雪莉", fillcolor="#39e581ff"] ;
+8 -> 9 ;
+10 [label="proline <= 987.518\nentropy = 0.75\nsamples = 56\nvalue = [44, 12, 0]\nclass = 琴酒", fillcolor="#e58139b9"] ;
+8 -> 10 ;
+11 [label="proline <= 774.583\nentropy = 1.0\nsamples = 24\nvalue = [12, 12, 0]\nclass = 琴酒", fillcolor="#e5813900"] ;
+10 -> 11 ;
+12 [label="entropy = 0.863\nsamples = 14\nvalue = [4, 10, 0]\nclass = 雪莉", fillcolor="#39e58199"] ;
+11 -> 12 ;
+13 [label="entropy = 0.722\nsamples = 10\nvalue = [8, 2, 0]\nclass = 琴酒", fillcolor="#e58139bf"] ;
+11 -> 13 ;
+14 [label="entropy = 0.0\nsamples = 32\nvalue = [32, 0, 0]\nclass = 琴酒", fillcolor="#e58139ff"] ;
+10 -> 14 ;
+}
